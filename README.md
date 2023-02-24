@@ -21,7 +21,7 @@ Here are some enhancements I plan to make in the future:
 
 # Links
 - My personal website:
-- My GitHub repository: https://github.com/stefanshipinkoski/portfolio_website
+- My GitHub repository:https://github.com/stefanshipinkoski/portfolio_website
 
 # Contributing
 
