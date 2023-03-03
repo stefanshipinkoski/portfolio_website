@@ -13,9 +13,9 @@ def html_page(page_name):
 
 def write_to_csv(data):
     with open('./database.csv', 'a', newline='') as csv_file:
-        email = data['email']
-        subject = data['subject']
-        message = data['message']
+        email = data["email"]
+        subject = data["subject"]
+        message = data["message"]
         csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email, subject, message])
 
