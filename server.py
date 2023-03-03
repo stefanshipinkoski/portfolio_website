@@ -21,13 +21,9 @@ def write_to_csv(data):
 
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
-    error = None
     if request.method == 'POST':
-        try:
-            data = request.form.to_dict()
-            write_to_csv(data)
-            return redirect('/thankyou.html')
-        except:
-            'did not save to database'    
+        data = request.form.to_dict()
+        write_to_csv(data)
+        return redirect('/thankyou.html')
     else:
         return 'something went wrong try again'
