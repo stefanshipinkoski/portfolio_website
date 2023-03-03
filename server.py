@@ -12,7 +12,7 @@ def html_page(page_name):
     return render_template(page_name)
 
 def write_to_csv(data):
-    with open('./database.csv', 'a', newline='') as csv_file:
+    with open('database.csv', 'a', newline='') as csv_file:
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
