@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, Response
 import csv
 app = Flask(__name__)
 
@@ -26,4 +26,11 @@ def submit_form():
         write_to_csv(data)
         return redirect('/thankyou.html')
     else:
-        return 'something went wrong try again'
+        return 'something went wrong, please try again'
+
+
+@app.route('/robots.txt')
+def noindex():
+    r = Response(response="User-Agent: *\nDisallow: /\n", status=200, mimetype="text/plain")
+    r.headers["Content-Type"] = "text/plain; charset=utf-8"
+    return r
