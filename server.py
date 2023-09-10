@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, Response
 import csv
+import datetime
+
 app = Flask(__name__)
 
 
@@ -16,8 +18,9 @@ def write_to_csv(data):
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
         csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        csv_writer.writerow([email, subject, message])
+        csv_writer.writerow([email, subject, message, timestamp])
 
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
@@ -26,7 +29,7 @@ def submit_form():
         write_to_csv(data)
         return redirect('/thankyou.html')
     else:
-        return 'something went wrong, please try again'
+        return 'Something went wrong, please try again'
 
 
 @app.route('/robots.txt')
