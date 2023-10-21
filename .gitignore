@@ -1,0 +1,36 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore environment-specific settings
+.env
+.env.*
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore your virtual environment
+venv/
+venv2/
+.env/
+.idea/
+*.sqlite
+
+# Ignore log and temporary files
+*.log
+*.swp
+*~
+
+# Ignore the build and distribution directories
+build/
+dist/
+
+# Ignore the egg-info directory
+*.egg-info/
+
+# Ignore pipenv virtual environment
+Pipfile.lock
+
+# Ignore the to_do.txt file
+to_do.txt
