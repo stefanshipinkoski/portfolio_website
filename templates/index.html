@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="ozq4sniuSYzmbvi-A7uFu_Tn6Y4_MCbcHYNkkpjhcpo" />
     <meta name="description" content="Visit my personal website to explore my portfolio of skills and projects.">
     <meta name="author" content="Stefan Shipinkoski">
     <title>Stefan Shipinkoski Porfolio</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <!-- font icons -->
-    <link rel="stylesheet" href="./static/assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Stefan main styles -->
-    <link rel="stylesheet" href="./static/assets/css/johndoe.css">
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="https://twitter.com/ship_stefan" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/stefanshipinkoski/" target="_blank" ><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/stefanshipinkoski" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul>  
+                <li class="social-item"><a class="social-link text-light" href="https://twitter.com/ship_stefan"
+                        target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light"
+                        href="https://www.linkedin.com/in/stefanshipinkoski/" target="_blank"><i class="ti-linkedin"
+                            aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/stefanshipinkoski"
+                        target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>
             <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Stefan Shipinkoski</h1>
-                <h6 class="header-mono" >Python Developer | AI Engineer</h6>
+                <h6 class="header-mono">Python Developer | Data Scientist</h6>
                 <!-- Print Resume Button -->
                 <a onclick="window.open('./static/assets/docs/CV-Stefan_Shipinkoski.pdf')">
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
-                <a/>
-                <!-- Hire me Button -->
-                <a href="#contact">
-                <button class="btn btn-primary btn-rounded" >
-                    <i class="ti-check pr-2"></i>Hire me
-                </button>
-                </a>
+                    <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                    <a />
+                    <!-- Hire me Button -->
+                    <a href="#contact">
+                        <button class="btn btn-primary btn-rounded">
+                            <i class="ti-check pr-2"></i>Hire me
+                        </button>
+                    </a>
             </div>
         </div>
     </header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
@@ -59,7 +64,7 @@
                     <img src="./static/assets/imgs/profile.jpg" alt="profile" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Stefan Shipinkoski</h5>
-                        <div class="brand-subtitle">Python Developer | AI Engineer</div>
+                        <div class="brand-subtitle">Python Developer | Data Scientist</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -78,50 +83,68 @@
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Who am I ?</h3>
                 <span class="line mb-5"></span>
-                <h5 class="mb-3">Python Developer | AI Engineer Located In Our Lovely Earth</h5>
-                <p class="mt-20">I am a Computer Science engineer, spending most of my days near my computer, learning new, and working on my current skills. I am interested in doing work in the software development field, and seeking opportunities to use my theoretical knowledge in a more practical way and solve real-life problems. You can check out my porfolio for some of my projects.</p>
+                <h5 class="mb-3">Python Developer | Data Scientist Located In Our Lovely Earth</h5>
+                <p class="mt-20">I'm a tech enthusiast who spends most of my time at my computer, learning new, and
+                    working on my current skills. I'm deeply passionate about software development, utilizing my strong
+                    theoretical and technical knowledge to create innovative solutions. Currently, I'm pursuing a
+                    Master's degree at the esteemed Faculty of Electrical Engineering and Information Technologies
+                    (FEIT), specializing in Data Science. I'm driven by an unending thirst for knowledge, diving deep
+                    into Artificial Intelligence (AI), Machine Learning (ML), and Large Language Models (LLMs). My dual
+                    commitment to my career and studies underlines my dedication to pushing the boundaries of knowledge
+                    and driving transformative progress in these fields. Explore my portfolio to see how I shape the
+                    future through code and data.</p>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 10/10/1997</li>
-                    <li><span>Email</span> : <a href="mailto:stefanshipinkoski@gmail.com">stefanshipinkoski@gmail.com </a></li>
+                    <li><span>Email</span> : <a href="mailto:stefanshipinkoski@gmail.com">stefanshipinkoski@gmail.com
+                        </a></li>
                     <li><span>Phone</span> : <a href="tel:+ 389 77 501 431" target="_blank">+ 389 77 501 431 </a></li>
-                    <li><span>Skype</span> : <a href="callto://live:stefansipinkoski" target="_blank"> stefansipinkoski </a></li>
-                    <li><span>Address</span> : <a href="https://goo.gl/maps/YfiaEata5Scyop2S8" target="_blank"> Bitola, Macedonia. </a></li>
+                    <li><span>Skype</span> : <a href="callto://live:.cid.a3f81135187dedfd" target="_blank">
+                            stefansipinkoski
+                        </a></li>
+                    <li><span>Location</span> : <a href="https://maps.app.goo.gl/TmncdBJNsw8azisF7" target="_blank">
+                            EAME
+                        </a></li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://twitter.com/ship_stefan" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/stefanshipinkoski/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/stefanshipinkoski" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
+                    <li class="social-item"><a class="social-link" href="https://twitter.com/ship_stefan"
+                            target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/stefanshipinkoski/"
+                            target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/stefanshipinkoski"
+                            target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
                 <span class="line mb-5"></span>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-check icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><iconify-icon icon="devicon:python" width="32"
+                            height="32"></iconify-icon></div>
                     <div class="col-10 ml-auto mr-3">
                         <h4>Python Development</h4>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><iconify-icon icon="eos-icons:ai" style="color: blue;"
+                            width="35" height="35"></iconify-icon></div>
                     <div class="col-10 ml-auto mr-3">
                         <h4>Artificial Intelligence</h4>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-bar-chart icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><iconify-icon icon="ep:data-line" style="color: yellowgreen;"
+                            width="32" height="32"></iconify-icon></div>
                     <div class="col-10 ml-auto mr-3">
                         <h4>Data Engineering</h4>
                         <hr>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 
@@ -132,149 +155,208 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="mt-2">
                                 <h4><b>Work / Experience</b></h4>
-                                <span class="line"></span>  
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">07/2023 - Present</h6>
-                            <h5><P><b>Data Scientist @ <a href="https://www.iwconnect.com" target="_blank"> ⋮IWConnect </a></b></P></h5>
+                            <h5>
+                                <P><b>Data Scientist @ <a href="https://www.iwconnect.com" target="_blank"> ⋮IWConnect
+                                        </a></b></P>
+                            </h5>
                             <P><b>Bitola, North Macedonia</b></P>
-                            <P class="subtitle">Leveraging Cloud based platforms (AWS/Azure) and on-prem solutions for tasks like training, deploying and fine-tuning models. I work extensively with Python, ML, DL, Gen AI, LLM’s, and frameworks including Langchain TensorFlow, Pytorch, and Scikit Learn. My role involves transforming complex unstructured data into actionable insights harnessing cutting-edge technologies for driving innovation, and creating POCs to present to stakeholders.</P>
+                            <P class="subtitle">Leveraging Cloud based platforms (AWS/Azure) and on-prem solutions for
+                                tasks like training, deploying and fine-tuning models. I work extensively with Python,
+                                ML, DL, Gen AI, LLM’s, and frameworks including Langchain TensorFlow, Pytorch, and
+                                Scikit Learn. My role involves transforming complex unstructured data into actionable
+                                insights harnessing cutting-edge technologies for driving innovation, and creating POCs
+                                to present to stakeholders.</P>
 
                             <h6 class="title text-danger">06/2021 - 09/2021</h6>
-                            <h5><P><b>AI Intern @ <a href="https://aidea.mk" target="_blank"> AIdea Lab </a></b></P></h5>
+                            <h5>
+                                <P><b>AI Intern @ <a href="https://aidea.mk" target="_blank"> AIdea Lab </a></b></P>
+                            </h5>
                             <P><b>Skopje, North Macedonia</b></P>
-                            <P class="subtitle">Working on task for real life projects and learning the craft of AI from competent people, who’s working experience exceeds 10 years in given sphere. It made a great contribution to my self-development</P>
+                            <P class="subtitle">Working on task for real life projects and learning the craft of AI from
+                                competent people, who’s working experience exceeds 10 years in given sphere. It made a
+                                great contribution to my self-development</P>
                             <hr>
-                            
+
                             <h6 class="title text-danger">06/2018 - 09/2018</h6>
-                            <h6><P><b>IT Support Intern @ <a href="https://snbroker.mk" target="_blank"> SN Insurance</a></b></P></h6>
+                            <h6>
+                                <P><b>IT Support Intern @ <a href="https://snbroker.mk" target="_blank"> SN
+                                            Insurance</a></b></P>
+                            </h6>
                             <P><b>Bitola, North Macedonia</b></P>
-                            <P class="subtitle"> Interned in IT department, provided technical support for staff, created and configured WordPress websites and plugins.</P>
+                            <P class="subtitle"> Interned in IT department, provided technical support for staff,
+                                created and configured WordPress websites and plugins.</P>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="mt-2">
                                 <h4><b>Education</b></h4>
-                                <span class="line"></span>  
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body">
+                            <h6 class="title text-danger">2023 - Present</h6>
+                            <P><b>M.Sc: Data Science in Electrical Engineering</b></P>
+                            <P class="subtitle">Subjects: Data Science and Machine Learning, Ambient Intelligence and
+                                Smart Devices,
+                                Artificial Intelligence and Deep Learning, Parallel and Distributed Machine Learning,
+                                Data Warehouse and Purpose-built Data</P>
+                            <hr>
+                        </div>
+                        <div class="card-body">
                             <h6 class="title text-danger">2018 - 2023</h6>
-                            <P> <b>B.Sc of Computer Science and Communication Engineering</b></P>
-                            <P class="subtitle">Subjects: Structured Programming, Object Programming in Java, Database SQL, Algorithm, Artificial Intelligence, knowledge systems, Wired Networks etc.</P>
+                            <P> <b>B.Sc: Computer Science and Communication Engineering</b></P>
+                            <P class="subtitle">Subjects: Structured Programming, Object Programming in Java, Database
+                                SQL, Algorithm, Artificial Intelligence, knowledge systems, Wired Networks etc.</P>
                             <hr>
                         </div>
                         <div class="card-header">
                             <div class="mt-2">
+                                <h4><b>Achievements</b></h4>
+                                <span class="line"></span>
                                 <h4><b>Certificates & Achievements</b></h4>
                                 <span class="line"></span>  
                             </div>
                         </div>
                         <div class="card-body">
                             <P><b>Microsoft Certified</b></P>
-                            <P class="subtitle"><a href="https://www.credly.com/badges/f5527885-2be3-4be4-b338-b9404800fda8?source=linked_in_profile" target="_blank">AI-900: Microsoft Azure AI Fundamentals</a></P>
+                            <P class="subtitle"><a
+                                    href="https://www.credly.com/badges/f5527885-2be3-4be4-b338-b9404800fda8?source=linked_in_profile"
+                                    target="_blank">AI-900: Microsoft Azure AI Fundamentals</a></P>
                             <hr>
-                            <hr>
-                            <P><b>Kaggle Certified</b></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/Python.png" target="_blank">Python</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/IntroToML.png" target="_blank">Intro to Machine Learning</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/Pandas.png" target="_blank">Pandas</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/IntermediateML.png" target="_blank">Intermediate Machine Learning</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/DataVisualization.png" target="_blank">Data Visualization</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/FeatureEngineering.png" target="_blank">Feature Engineering</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/IntroToDL.png" target="_blank">Intro to Deep Learning</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/IntroToSQL.png" target="_blank">Intro to SQL</a></P>
-                            <P class="subtitle"><a href="./static/assets/imgs/ComputerVision.png" target="_blank">Computer Vision</a></P>
+                            <P><b>Tech Talks | Conferences</b></P>
+                            <P class="subtitle"><a
+                                    href="https://www.linkedin.com/feed/update/urn:li:activity:7124810428144046081/"
+                                    target="_blank">Guest Speaker at the First AI Tech Talk in Ohrid</a></P>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="pull-left">
                                 <h4 class="mt-2"><b>Skills</b></h4>
-                                <span class="line"></span>  
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                            <h6>Python</h6>
+                            <h6><iconify-icon icon="logos:python" width="25" height="25"></iconify-icon> Python</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Machine Learning</h6>
+                            <h6><iconify-icon icon="carbon:machine-learning" style="color: green;" width="25"
+                                    height="25"></iconify-icon> Machine Learning</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Deep Learning</h6>
+                            <h6><iconify-icon icon="fluent-mdl2:machine-learning" style="color: green;" width="25"
+                                    height="25"></iconify-icon> Deep Learning</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <h6><iconify-icon icon="arcticons:openai-chatgpt" style="color: black;" width="25"
+                                    height="25"></iconify-icon> Generative AI</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6><iconify-icon icon="vscode-icons:file-type-azure" width="25" height="25"></iconify-icon>
+                                Azure</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6><iconify-icon icon="logos:aws" width="25" height="25"></iconify-icon> AWS</h6>
                             <h6>Generative AI</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Azure</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>SQL</h6>
+                            <h6><iconify-icon icon="devicon:azuresqldatabase" width="25" height="25"></iconify-icon> SQL
+                            </h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>HTML &amp; CSS</h6>
+                            <h6><iconify-icon icon="pepicons-pop:chain" width="25" height="25"></iconify-icon> LangChain
+                            </h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6><iconify-icon icon="icon-park:web-page" width="25" height="25"></iconify-icon> HTML
+                                &amp; CSS</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="pull-left">
                                 <h4 class="mt-2"><b>Soft Skills</b></h4>
-                                <span class="line"></span>  
+                                <span class="line"></span>
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>Communication</h6>
+                            <h6>Communication</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Problem Solving</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Team Work</h6>
+                            <h6>Teamwork</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Adaptability</h6>
+                            <h6>Persistence</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Creativity</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>High Responsibility</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Fast Learning</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                    </div>                    
-                </div>           
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -285,79 +367,96 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark"><b>Web Development</b></h5>
-                            <P class="subtitle">Development of highly responsive and dynamic web sites utilizing Flask framework for the backend and HTML, CSS, JavaScript, and Bootstrap for the frontend development< Contact me today to discuss how I can assist you in bringing your web site ideas to life. </P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark"><b>Python Scripting</b> </h5>
-                            <P class="subtitle">Developing custom Python scripts based on your specific requirements and desires, utilizing both built-in and custom-built Python modules. Experienced in creating Python scripts for a variety of purposes. Contact me today to discuss how I can help you build efficient and reliable Python scripts that meet your unique needs.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark"><b>Python Website Scraping</b></h5>
-                            <P class="subtitle">Developing customized a Python program for web scraping, allowing you to extract specific information from websites that meets your unique needs.</P>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark"><b>Testing</b></h5>
-                            <P class="subtitle">Designing and developing customized testing scripts, utilizing the Unittest library for testing Python applications</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark"><b>Machine Learning</b></h5>
-                            <P class="subtitle">Designing and implementation of Machine Learning models, such as Decision Trees, Support Vector Machines, and K-Nearest Neighbors, for critical tasks such as prediction, classification, regression. Furthermore providing error calculation, accuracy assessment, testing, and Hyperparameter tuning.</P>
+                            <P class="subtitle">Designing and implementation of Machine Learning models, such as
+                                Decision Trees, Support Vector Machines, and K-Nearest Neighbors, for critical tasks
+                                such as prediction, classification, regression. Furthermore providing error calculation,
+                                accuracy assessment, testing, and Hyperparameter tuning.</P>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
+                        <div class="card-header has-icon">
+                            <i class="ti-comment text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark"><b>Deep Learning</b></h5>
-                            <P class="subtitle">Designing and implementing of Deep Learning neural networks, collecting and preparing data, as well as training the neural network. These neural networks are crucial for accomplishing essential tasks such as forecasting, classification, and image processing. Expertise in Convolutional Neural Networks (CNN), Multilayer Perceptron (MLP), and Artificial Neural Networks (ANN).</P>
+                            <P class="subtitle">Designing and implementing of Deep Learning neural networks, collecting
+                                and preparing data, as well as training the neural network. These neural networks are
+                                crucial for accomplishing essential tasks such as forecasting, classification, and image
+                                processing. Expertise in Convolutional Neural Networks (CNN), Multilayer Perceptron
+                                (MLP), and Artificial Neural Networks (ANN).</P>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-support text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark"><b>Data Analytics and Visualization</b></h5>
-                            <P class="subtitle"> Analyzing evast and complex data, which includes simplifying it to make it more accessible, comprehensible, and useful. Additionally, presenting the analyzed data visually, which helps enhance understanding and facilitates effective communication.</P>
+                            <P class="subtitle"> Analyzing evast and complex data, which includes simplifying it to make
+                                it more accessible, comprehensible, and useful. Additionally, presenting the analyzed
+                                data visually, which helps enhance understanding and facilitates effective
+                                communication.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-write text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark"><b>Python Scripting</b> </h5>
+                            <P class="subtitle">Developing custom Python scripts based on your specific requirements and
+                                desires, utilizing both built-in and custom-built Python modules. Experienced in
+                                creating Python scripts for a variety of purposes. Contact me today to discuss how I can
+                                help you build efficient and reliable Python scripts that meet your unique needs.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark"><b>Web Development</b></h5>
+                            <P class="subtitle">Development of highly responsive and dynamic web sites utilizing Flask
+                                framework for the backend and HTML, CSS, JavaScript, and Bootstrap for the frontend
+                                development< Contact me today to discuss how I can assist you in bringing your web site
+                                    ideas to life. </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark"><b>Web Scraping</b></h5>
+                            <P class="subtitle">Developing customized a Python program for web scraping, allowing you to
+                                extract specific information from websites that meets your unique needs.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
+                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark"><b>Testing</b></h5>
+                            <P class="subtitle">Designing and developing customized testing scripts, utilizing the
+                                Unittest library for testing Python applications</P>
                         </div>
                     </div>
                 </div>
@@ -416,7 +515,6 @@
         </div>
     </section>
 
-
     <!-- Portfolio Section -->
     <section class="section bg-custom-gray" id="portfolio">
         <div class="container">
@@ -439,29 +537,94 @@
                         Web
                     </a>
                 </div>
-                <div class="portfolio-container"> 
+                <div class="portfolio-container">
                     <div class="col-md-6 col-lg-4 python all">
                         <div class="portfolio-item">
+                            <img src="./static/assets/imgs/password-checker.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <img src="./static/assets/imgs/password-checker.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="./static/assets/imgs/password-checker.jpg"></a>
                                 <div class="text-holder">
                                     <a href="https://github.com/stefanshipinkoski/password-checker" target="_blank">
-                                    <h5 class="mb-3 card-title text-light"><b>Password Checker</b></h5>
-                                    <p class="subtitle">Designed and developed personal password verification tool in Python 3, which utilized the haveibeenpwned API to determine if any of my passwords had been disclosed online.</p>
+                                        <h5 class="mb-3 card-title text-light"><b>Password Checker</b></h5>
+                                        <p class="subtitle">Designed and developed personal password verification
+                                            tool
+                                            in Python 3, which utilized the haveibeenpwned API to determine if any
+                                            of my
+                                            passwords had been disclosed online.</p>
                                     </a>
                                 </div>
-                            </div>   
-                        </div>             
+                            </div>
+                        </div>
                     </div>
-            
+
                     <div class="col-md-6 col-lg-4 python all">
                         <div class="portfolio-item">
-                            <img src="./static/assets/imgs/hackernews.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                
+                            <img src="./static/assets/imgs/hackernews.png" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="./static/assets/imgs/hackernews.png"></a>
                                 <div class="text-holder">
                                     <a href="https://github.com/stefanshipinkoski/hackernews-scraper" target="_blank">
+                                        <h5 class="mb-3 card-title text-light"><b>Hacker-News Scraper</b></h5>
+                                        <p class="subtitle">Developed a web scraper to scrape the pages of Hacker
+                                            News
+                                            website for the new posts with a score of 100 or more, and subsequently
+                                            save
+                                            them to a .txt file, that include post’s `hyperlink, title, and total
+                                            score,they get sorted by the number of points starting with the highest.
+                                            Using Python and Beautiful Soup. </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 deeplearning all">
+                        <div class="portfolio-item">
+                            <img src="./static/assets/imgs/branding-1.gif" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="./static/assets/imgs/branding-1.gif"></a>
+                                <div class="text-holder">
+                                    <a href="https://github.com/stefanshipinkoski/cifar-10-cnn" target="_blank">
+                                        <h5 class="mb-3 card-title text-light"><b>CIFAR-10 Object Classification</b>
+                                        </h5>
+                                        <p class="subtitle">Using the popular dataset from the Canadian Institute
+                                            for
+                                            Advanced Research(CIFAR), which contains a diverse array of 10 distinct
+                                            object types, a Convolutional Neural Network (CNN) was meticulously
+                                            designed
+                                            and trained for the purpose of accurately labeling objects within the
+                                            images.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 machinelearning all">
+                        <div class="portfolio-item">
+                            <img src="./static/assets/imgs/water_quality_project.jpeg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="./static/assets/imgs/water_quality_project.jpeg"></a>
+                                <div class="text-holder">
+                                    <a href="https://github.com/stefanshipinkoski/water_quality_classificaiton"
+                                        target="_blank">
+                                        <h5 class="mb-3 card-title text-light"><b>Water Quality Detection (Diploma
+                                                Thesis)</b></h5>
+                                        <p class="subtitle">This project employs a character-based Recurrent Neural
+                                            Network (RNN) with Keras Subclassing for text generation, using
+                                            Shakespeare's writings. After 30 epochs, the model produces coherent yet
+                                            nonsensical text, showcasing structured outputs resembling a play's
+                                            format
+                                            from small text batches.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                                     <h5 class="mb-3 card-title text-light"><b>Hacker-News Scraper</b></h5>
                                     <p class="subtitle">Developed a web scraper to scrape the pages of Hacker News website for the new posts with a score of 100 or more, and subsequently save them to a .txt file, that include post’s `hyperlink, title, and total score,they get sorted by the number of points starting with the highest. Using Python and Beautiful Soup. </p>
                                     </a>
@@ -517,11 +680,39 @@
 
 <!--                     <div class="col-md-6 col-lg-4 deeplearning all">
                         <div class="portfolio-item">
+                            <img src="./static/assets/imgs/branding-1.gif" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <img src="./static/assets/imgs/hackernews.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                
                             <div class="content-holder">
                                 <a class="img-popup" href="./static/assets/imgs/branding-1.gif"></a>
                                 <div class="text-holder">
                                     <a href="https://github.com/stefanshipinkoski/text_generation-RNN" target="_blank">
+
+                                        <h5 class="mb-3 card-title text-light"><b>Text generation with RNN</b></h5>
+                                        <p class="subtitle">Developing a model that can accurately classify the
+                                            water
+                                            quality index into three categories: Low, Medium, and High. To achieve
+                                            this,
+                                            using supervised Machine Learning techniques: Decision Tree, Support
+                                            Vector
+                                            Machine (SVM), and K-Nearest Neighbor (KNN).</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                     <div class="col-md-6 col-lg-4 deeplearning all">
+                        <div class="portfolio-item">
+                            <img src="./static/assets/imgs/hackernews.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                
+                            <div class="content-holder">
+                                <a class="img-popup" href="./static/assets/imgs/branding-1.gif"></a>
+                                <div class="text-holder">
+                                    <a href="https://github.com/stefanshipinkoski/text_generation-RNN" target="_blank">
+                                    <h5 class="mb-3 card-title text-light"><b>Text generation with RNN</b></h5>
+                                    <p class="subtitle">Developing a model that can accurately classify the water quality index into three categories: Low, Medium, and High. To achieve this, using supervised Machine Learning techniques: Decision Tree, Support Vector Machine (SVM), and K-Nearest Neighbor (KNN).</p>
+                                    </a>
+                                </div>
                                     <h5 class="mb-3 card-title text-light"><b>Text generation with RNN</b></h5>
                                     <p class="subtitle">Developing a model that can accurately classify the water quality index into three categories: Low, Medium, and High. To achieve this, using supervised Machine Learning techniques: Decision Tree, Support Vector Machine (SVM), and K-Nearest Neighbor (KNN).</p>
                                     </a>
@@ -533,32 +724,36 @@
 
                     <div class="col-md-6 col-lg-4 web all">
                         <div class="portfolio-item">
-                            <img src="./static/assets/imgs/portfolio_picture.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="./static/assets/imgs/portfolio_picture.jpg" class="img-fluid"
+                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                             <div class="content-holder">
                                 <a class="img-popup" href="./static/assets/imgs/portfolio_picture.jpg"></a>
                                 <div class="text-holder">
                                     <a href="https://github.com/stefanshipinkoski/portfolio_website" target="_blank">
-                                    <h5 class="mb-3 card-title text-light"><b>Portfolio Website</b></h5>
-                                    <p class="subtitle">Developed my own personal portfolio website, using the latest technologies of Python, Flask, HTML, CSS, and JavaScript, where I can showcase my current skills, interests and projects.</p>
+                                        <h5 class="mb-3 card-title text-light"><b>Portfolio Website</b></h5>
+                                        <p class="subtitle">Developed my own personal portfolio website, using the
+                                            latest technologies of Python, Flask, HTML, CSS, and JavaScript, where I
+                                            can
+                                            showcase my current skills, interests and projects.</p>
                                     </a>
                                 </div>
                             </div>
-                        </div>                                                     
+                        </div>
                     </div>
-                </div> 
-            </div>  
-        </div>            
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End of portfolio section -->
     <section class="section bg-dark py-5">
         <div class="container text-center">
             <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <a href="contact">
-            <button class="btn bg-primary w-lg" ><i class="ti-check pr-2"></i>Hire me</button>
+            <a href="#contact">
+                <button class="btn bg-primary w-lg"><i class="ti-check pr-2"></i>Hire me</button>
             </a>
         </div>
     </section>
-    
+
     <div class="section contact" id="contact">
         <div id="map" class="map"></div>
         <div class="container">
@@ -574,10 +769,11 @@
                                 <input name="email" class="form-control" type="email" placeholder="Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="message" class="form-control"  placeholder="Message *" rows="7" required></textarea>
+                                <textarea name="message" class="form-control" placeholder="Message *" rows="7"
+                                    required></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -591,7 +787,9 @@
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a href="tel:+ 389 77 501 431" target="_blank">+ 389 77 501 431 </a></span></h6>
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a
+                                            href="tel:+ 389 77 501 431" target="_blank">+ 389 77 501 431 </a></span>
+                                </h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -599,7 +797,9 @@
                                 <i class="ti-map-alt icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted"><a href="https://goo.gl/maps/YfiaEata5Scyop2S8" target="_blank"> Bitola, Macedonia.</a></span></h6>
+                                <h6 class="d-inline">Location :<br> <span class="text-muted"><a
+                                            href="https://maps.app.goo.gl/TmncdBJNsw8azisF7" target="_blank">
+                                            EAME</a></span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -607,14 +807,22 @@
                                 <i class="ti-envelope icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted"> <a href="mailto:stefanshipinkoski@gmail.com">stefanshipinkoski@gmail.com </a></span></h6>
+                                <h6 class="d-inline">Email :<br> <span class="text-muted"> <a
+                                            href="mailto:stefanshipinkoski@gmail.com">stefanshipinkoski@gmail.com
+                                        </a></span></h6>
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="https://twitter.com/ship_stefan" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/stefanshipinkoski" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/stefanshipinkoski/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul> 
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://twitter.com/ship_stefan" target="_blank"><i class="ti-twitter"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://github.com/stefanshipinkoski" target="_blank"><i class="ti-github"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark"
+                                    href="https://www.linkedin.com/in/stefanshipinkoski/" target="_blank"><i
+                                        class="ti-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -624,11 +832,14 @@
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved By <a href="#home" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Stefan Shipinkoski</span></a> 
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> All Rights Reserved By <a href="#home"
+                    target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Stefan
+                        Shipinkoski</span></a>
             </p>
         </div>
     </footer>
-    
+
 
     <!-- core  -->
     <script src="./static/assets/vendors/jquery/jquery-3.4.1.js"></script>
@@ -642,8 +853,10 @@
 
     <!-- JohnDoe js -->
     <script src="./static/assets/js/johndoe.js"></script>
-
-
-
+    <!-- font icons -->
+    <link rel="stylesheet" href="./static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Stefan main styles -->
+    <link rel="stylesheet" href="./static/assets/css/johndoe.css">
 </body>
+
 </html>
