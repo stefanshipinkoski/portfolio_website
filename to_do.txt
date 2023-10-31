@@ -1,0 +1,8 @@
+1. Change in the Resume:
+	- Change the link for the WQC Project to the repo on git
+	- Split the experince section into subtitles
+	- Add the Instructor Experience in the Experience section
+2. Add achievements in the Achievements sections for Ohrid conference
+4. Add the Instructor Experience in the Experience section
+3. Add the rest of the WQC Project in the Portfolio section 
+?. ADd a Blog page where you can write blog posts
