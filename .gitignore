@@ -11,6 +11,7 @@ __pycache__/
 Thumbs.db
 
 # Ignore your virtual environment
+venv/
 venv
 venv2/
 .env/
