@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request, redirect, Response
+from flask import Flask, render_template, request, redirect, Response, send_from_directory
 import csv
 import datetime
+import os
 
 app = Flask(__name__)
 
@@ -10,9 +11,16 @@ def my_home():
     return render_template('index.html')
 
 
+# @app.route('/<string:page_name>')
+# def html_page(page_name):
+#     return render_template(page_name)
+
 @app.route('/<string:page_name>')
 def html_page(page_name):
-    return render_template(page_name)
+    if page_name in ['favicon.ico', 'robots.txt', 'sitemap.xml']:
+        return send_from_directory(app.static_folder, page_name)
+    else:
+        return render_template(page_name)
 
 
 def write_to_csv(data):
@@ -37,8 +45,6 @@ def submit_form():
 
 
 @app.route('/robots.txt')
-def noindex():
-    r = Response(response="User-Agent: *\nDisallow: \n",
-                 status=200, mimetype="text/plain")
-    r.headers["Content-Type"] = "text/plain; charset=utf-8"
-    return r
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(os.path.join(app.static_folder, 'assets'), request.path[1:])
