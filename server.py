@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, redirect, Response, send_from_directory
+from flask_cors import CORS, cross_origin
 import csv
 import datetime
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/')
@@ -30,14 +32,15 @@ def write_to_csv(data):
         csv_writer.writerow([email, subject, message, timestamp])
 
 
-@app.route('/submit_form', methods=['POST', 'GET'])
+@app.route('/submit_form', methods=['POST'])
+@cross_origin()
 def submit_form():
-    if request.method == 'POST':
+    try:
         data = request.form.to_dict()
         write_to_csv(data)
         return redirect('/thankyou.html')
-    else:
-        return 'Something went wrong, please try again'
+    except Exception as err:
+        return f'Something went wrong, please try again {err}'
 
 
 @app.route('/robots.txt')
