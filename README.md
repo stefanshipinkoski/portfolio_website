@@ -37,7 +37,7 @@ I'm open to contributions from other developers! If you'd like to contribute, pl
 
 To run the website locally, follow these steps:
 1. Clone this repository to your local machine.
-2. Install the necessary dependencies by running `pip install -r requirements.txt`.
-3. Set the Flask app environment variable by running `export FLASK_APP=server.py`.
+2. Install the necessary dependencies by running `pip install -r requirements.txt`
+3. Set the Flask app environment variable by running `$env:FLASK_APP="server.py"` | `$env:FLASK_ENV="development"`
 4. Run the app by running `flask run`.
 5. Visit `localhost:5000` in your browser to view the website
