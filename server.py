@@ -13,6 +13,11 @@ def my_home():
     return render_template('index.html')
 
 
+@app.route('/privacy')
+def privacy_policy():
+    return render_template('personal-assistant-privacy.html')
+
+
 @app.route('/<string:page_name>')
 def html_page(page_name):
     if page_name in ['favicon.ico', 'robots.txt', 'sitemap.xml']:

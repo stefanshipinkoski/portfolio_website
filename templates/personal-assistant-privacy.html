@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy Policy for the Google Workspace personal-assistant integration operated by Stefan Shipinkoski.">
+    <meta name="author" content="Stefan Shipinkoski">
+    <meta name="robots" content="index, follow">
+    <title>Privacy Policy | Stefan Shipinkoski</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        :root { color-scheme: light; --ink:#172033; --muted:#556070; --accent:#c43d4f; --line:#dfe3ea; --bg:#f6f7f9; }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--bg); line-height:1.65; }
+        main { max-width:850px; margin:0 auto; padding:64px 24px; }
+        article { background:#fff; border:1px solid var(--line); border-radius:14px; padding:40px; box-shadow:0 8px 28px rgba(23,32,51,.06); }
+        h1 { margin:0 0 8px; font-size:2.1rem; line-height:1.2; }
+        h2 { margin-top:34px; font-size:1.3rem; }
+        p, li { color:var(--muted); }
+        a { color:var(--accent); }
+        .updated { color:var(--muted); margin-top:0; }
+        .summary { background:#f8eef0; border-left:4px solid var(--accent); padding:14px 18px; border-radius:6px; }
+        footer { margin-top:24px; text-align:center; color:var(--muted); font-size:.9rem; }
+        @media (max-width:600px) { main { padding:24px 14px; } article { padding:26px 20px; } h1 { font-size:1.7rem; } }
+    </style>
+</head>
+<body>
+<main>
+    <article>
+        <h1>Privacy Policy for Stefan Shipinkoski</h1>
+        <p class="updated"><strong>Effective date:</strong> 7 September 2026</p>
+        <p class="summary">This is a private, limited-user productivity integration operated by Stefan Shipinkoski. Google user data is accessed only to complete tasks requested by an authorized user. It is not sold, used for advertising, or used to build advertising profiles.</p>
+
+        <h2>1. Application and operator</h2>
+        <p>This policy covers the private Google Workspace personal-assistant integration operated under the application name <strong>Stefan Shipinkoski</strong>. The integration connects the open-source Hermes Agent software with Google Workspace services and is intended only for Stefan and a limited number of users personally known to him.</p>
+
+        <h2>2. Google data the application can access</h2>
+        <p>After a user gives permission through Google's OAuth consent screen, the application may access:</p>
+        <ul>
+            <li><strong>Gmail:</strong> message metadata, message content, attachments, labels and drafts; and the ability to create, modify or send messages.</li>
+            <li><strong>Google Calendar:</strong> calendars, events, event details and attendees; and the ability to create, update or delete events.</li>
+            <li><strong>Google Drive:</strong> file names, metadata and file contents; and the ability to create, update, download, share or delete files when requested.</li>
+            <li><strong>Google Docs and Sheets:</strong> document and spreadsheet content; and the ability to create or update that content when requested.</li>
+            <li><strong>Google Contacts:</strong> names, email addresses and phone numbers on a read-only basis.</li>
+            <li><strong>Basic account information:</strong> the authorized Google account's email address and OAuth authorization details.</li>
+        </ul>
+
+        <h2>3. How Google data is used</h2>
+        <p>Google data is used solely to provide user-requested personal-assistant functions, such as finding an email, preparing a reply, checking a schedule, locating a Drive file, or updating a document after confirmation. Access is not used for advertising, credit decisions, surveillance, or unrelated profiling.</p>
+
+        <h2>4. Storage and retention</h2>
+        <p>OAuth credentials are stored in access-controlled files on Stefan's private computer. Information needed to complete a request may appear in local Hermes conversation history, logs, generated files or user-approved memory. Data is retained only for operational continuity, user-requested records, security, or troubleshooting, and can be deleted by the operator upon request. The public portfolio website does not receive or store Google OAuth tokens or Google Workspace content.</p>
+
+        <h2>5. Processing and disclosure</h2>
+        <p>When needed to complete a user's request, the minimum relevant content may be processed by the user's configured AI model provider. The current configured provider is Microsoft Azure AI Foundry. The integration does not sell Google user data, disclose it to data brokers, use it for advertising, or use it to train a general-purpose model. Data may also be disclosed when required by law or necessary to protect the user or the security of the system.</p>
+
+        <h2>6. Security</h2>
+        <p>The operator uses OAuth authorization instead of collecting Google passwords, restricts local credential-file access, limits access to authorized profiles, and seeks user confirmation before consequential external actions. No security method is perfect, but reasonable measures are used to protect credentials and user data.</p>
+
+        <h2>7. User control, revocation and deletion</h2>
+        <p>A user can revoke the application's Google access at any time from <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">Google Account third-party connections</a>. To request deletion of locally retained data associated with this integration, email <a href="mailto:stefanshipinkoski@gmail.com">stefanshipinkoski@gmail.com</a>. Revoking access prevents new access but does not automatically remove local records already created at the user's request.</p>
+
+        <h2>8. Google API Services User Data Policy</h2>
+        <p>The application's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+
+        <h2>9. Changes to this policy</h2>
+        <p>This policy may be updated when the integration, its data practices, or applicable requirements change. The effective date at the top of this page identifies the current version.</p>
+
+        <h2>10. Contact</h2>
+        <p>For privacy questions or requests, contact Stefan Shipinkoski at <a href="mailto:stefanshipinkoski@gmail.com">stefanshipinkoski@gmail.com</a>.</p>
+
+        <p><a href="{{ url_for('my_home') }}">Return to Stefan Shipinkoski's homepage</a></p>
+    </article>
+    <footer>© Stefan Shipinkoski</footer>
+</main>
+</body>
+</html>
